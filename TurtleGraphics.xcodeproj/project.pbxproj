@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		144BE9901CFC8C5000E32A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BE98F1CFC8C5000E32A0A /* AppDelegate.swift */; };
+		144BE9921CFC8C5000E32A0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BE9911CFC8C5000E32A0A /* ViewController.swift */; };
+		144BE9951CFC8C5000E32A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144BE9931CFC8C5000E32A0A /* Main.storyboard */; };
+		144BE9971CFC8C5000E32A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144BE9961CFC8C5000E32A0A /* Assets.xcassets */; };
+		144BE99A1CFC8C5000E32A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144BE9981CFC8C5000E32A0A /* LaunchScreen.storyboard */; };
+		144BE9A51CFC8C5000E32A0A /* TurtleGraphicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BE9A41CFC8C5000E32A0A /* TurtleGraphicsTests.swift */; };
+		144BE9B01CFC8C5000E32A0A /* TurtleGraphicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BE9AF1CFC8C5000E32A0A /* TurtleGraphicsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		144BE9A11CFC8C5000E32A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 144BE9841CFC8C5000E32A0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 144BE98B1CFC8C5000E32A0A;
+			remoteInfo = TurtleGraphics;
+		};
+		144BE9AC1CFC8C5000E32A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 144BE9841CFC8C5000E32A0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 144BE98B1CFC8C5000E32A0A;
+			remoteInfo = TurtleGraphics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		144BE98C1CFC8C5000E32A0A /* TurtleGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurtleGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		144BE98F1CFC8C5000E32A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		144BE9911CFC8C5000E32A0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		144BE9941CFC8C5000E32A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		144BE9961CFC8C5000E32A0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		144BE9991CFC8C5000E32A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		144BE99B1CFC8C5000E32A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		144BE9A01CFC8C5000E32A0A /* TurtleGraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurtleGraphicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		144BE9A41CFC8C5000E32A0A /* TurtleGraphicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleGraphicsTests.swift; sourceTree = "<group>"; };
+		144BE9A61CFC8C5000E32A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		144BE9AB1CFC8C5000E32A0A /* TurtleGraphicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurtleGraphicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		144BE9AF1CFC8C5000E32A0A /* TurtleGraphicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleGraphicsUITests.swift; sourceTree = "<group>"; };
+		144BE9B11CFC8C5000E32A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		144BE9891CFC8C5000E32A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144BE99D1CFC8C5000E32A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144BE9A81CFC8C5000E32A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		144BE9831CFC8C5000E32A0A = {
+			isa = PBXGroup;
+			children = (
+				144BE98E1CFC8C5000E32A0A /* TurtleGraphics */,
+				144BE9A31CFC8C5000E32A0A /* TurtleGraphicsTests */,
+				144BE9AE1CFC8C5000E32A0A /* TurtleGraphicsUITests */,
+				144BE98D1CFC8C5000E32A0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		144BE98D1CFC8C5000E32A0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				144BE98C1CFC8C5000E32A0A /* TurtleGraphics.app */,
+				144BE9A01CFC8C5000E32A0A /* TurtleGraphicsTests.xctest */,
+				144BE9AB1CFC8C5000E32A0A /* TurtleGraphicsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		144BE98E1CFC8C5000E32A0A /* TurtleGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				144BE98F1CFC8C5000E32A0A /* AppDelegate.swift */,
+				144BE9911CFC8C5000E32A0A /* ViewController.swift */,
+				144BE9931CFC8C5000E32A0A /* Main.storyboard */,
+				144BE9961CFC8C5000E32A0A /* Assets.xcassets */,
+				144BE9981CFC8C5000E32A0A /* LaunchScreen.storyboard */,
+				144BE99B1CFC8C5000E32A0A /* Info.plist */,
+			);
+			path = TurtleGraphics;
+			sourceTree = "<group>";
+		};
+		144BE9A31CFC8C5000E32A0A /* TurtleGraphicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				144BE9A41CFC8C5000E32A0A /* TurtleGraphicsTests.swift */,
+				144BE9A61CFC8C5000E32A0A /* Info.plist */,
+			);
+			path = TurtleGraphicsTests;
+			sourceTree = "<group>";
+		};
+		144BE9AE1CFC8C5000E32A0A /* TurtleGraphicsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				144BE9AF1CFC8C5000E32A0A /* TurtleGraphicsUITests.swift */,
+				144BE9B11CFC8C5000E32A0A /* Info.plist */,
+			);
+			path = TurtleGraphicsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		144BE98B1CFC8C5000E32A0A /* TurtleGraphics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 144BE9B41CFC8C5000E32A0A /* Build configuration list for PBXNativeTarget "TurtleGraphics" */;
+			buildPhases = (
+				144BE9881CFC8C5000E32A0A /* Sources */,
+				144BE9891CFC8C5000E32A0A /* Frameworks */,
+				144BE98A1CFC8C5000E32A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurtleGraphics;
+			productName = TurtleGraphics;
+			productReference = 144BE98C1CFC8C5000E32A0A /* TurtleGraphics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		144BE99F1CFC8C5000E32A0A /* TurtleGraphicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 144BE9B71CFC8C5000E32A0A /* Build configuration list for PBXNativeTarget "TurtleGraphicsTests" */;
+			buildPhases = (
+				144BE99C1CFC8C5000E32A0A /* Sources */,
+				144BE99D1CFC8C5000E32A0A /* Frameworks */,
+				144BE99E1CFC8C5000E32A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144BE9A21CFC8C5000E32A0A /* PBXTargetDependency */,
+			);
+			name = TurtleGraphicsTests;
+			productName = TurtleGraphicsTests;
+			productReference = 144BE9A01CFC8C5000E32A0A /* TurtleGraphicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		144BE9AA1CFC8C5000E32A0A /* TurtleGraphicsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 144BE9BA1CFC8C5000E32A0A /* Build configuration list for PBXNativeTarget "TurtleGraphicsUITests" */;
+			buildPhases = (
+				144BE9A71CFC8C5000E32A0A /* Sources */,
+				144BE9A81CFC8C5000E32A0A /* Frameworks */,
+				144BE9A91CFC8C5000E32A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144BE9AD1CFC8C5000E32A0A /* PBXTargetDependency */,
+			);
+			name = TurtleGraphicsUITests;
+			productName = TurtleGraphicsUITests;
+			productReference = 144BE9AB1CFC8C5000E32A0A /* TurtleGraphicsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		144BE9841CFC8C5000E32A0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = antfarm;
+				TargetAttributes = {
+					144BE98B1CFC8C5000E32A0A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NC55XYQH45;
+					};
+					144BE99F1CFC8C5000E32A0A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NC55XYQH45;
+						TestTargetID = 144BE98B1CFC8C5000E32A0A;
+					};
+					144BE9AA1CFC8C5000E32A0A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NC55XYQH45;
+						TestTargetID = 144BE98B1CFC8C5000E32A0A;
+					};
+				};
+			};
+			buildConfigurationList = 144BE9871CFC8C5000E32A0A /* Build configuration list for PBXProject "TurtleGraphics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 144BE9831CFC8C5000E32A0A;
+			productRefGroup = 144BE98D1CFC8C5000E32A0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				144BE98B1CFC8C5000E32A0A /* TurtleGraphics */,
+				144BE99F1CFC8C5000E32A0A /* TurtleGraphicsTests */,
+				144BE9AA1CFC8C5000E32A0A /* TurtleGraphicsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		144BE98A1CFC8C5000E32A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144BE99A1CFC8C5000E32A0A /* LaunchScreen.storyboard in Resources */,
+				144BE9971CFC8C5000E32A0A /* Assets.xcassets in Resources */,
+				144BE9951CFC8C5000E32A0A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144BE99E1CFC8C5000E32A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144BE9A91CFC8C5000E32A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		144BE9881CFC8C5000E32A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144BE9921CFC8C5000E32A0A /* ViewController.swift in Sources */,
+				144BE9901CFC8C5000E32A0A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144BE99C1CFC8C5000E32A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144BE9A51CFC8C5000E32A0A /* TurtleGraphicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		144BE9A71CFC8C5000E32A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144BE9B01CFC8C5000E32A0A /* TurtleGraphicsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		144BE9A21CFC8C5000E32A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 144BE98B1CFC8C5000E32A0A /* TurtleGraphics */;
+			targetProxy = 144BE9A11CFC8C5000E32A0A /* PBXContainerItemProxy */;
+		};
+		144BE9AD1CFC8C5000E32A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 144BE98B1CFC8C5000E32A0A /* TurtleGraphics */;
+			targetProxy = 144BE9AC1CFC8C5000E32A0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		144BE9931CFC8C5000E32A0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				144BE9941CFC8C5000E32A0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		144BE9981CFC8C5000E32A0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				144BE9991CFC8C5000E32A0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		144BE9B21CFC8C5000E32A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		144BE9B31CFC8C5000E32A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		144BE9B51CFC8C5000E32A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TurtleGraphics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.antfarm.TurtleGraphics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		144BE9B61CFC8C5000E32A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TurtleGraphics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.antfarm.TurtleGraphics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		144BE9B81CFC8C5000E32A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TurtleGraphicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.antfarm.TurtleGraphicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurtleGraphics.app/TurtleGraphics";
+			};
+			name = Debug;
+		};
+		144BE9B91CFC8C5000E32A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TurtleGraphicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.antfarm.TurtleGraphicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurtleGraphics.app/TurtleGraphics";
+			};
+			name = Release;
+		};
+		144BE9BB1CFC8C5000E32A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TurtleGraphicsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.antfarm.TurtleGraphicsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TurtleGraphics;
+			};
+			name = Debug;
+		};
+		144BE9BC1CFC8C5000E32A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TurtleGraphicsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.antfarm.TurtleGraphicsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TurtleGraphics;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		144BE9871CFC8C5000E32A0A /* Build configuration list for PBXProject "TurtleGraphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144BE9B21CFC8C5000E32A0A /* Debug */,
+				144BE9B31CFC8C5000E32A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		144BE9B41CFC8C5000E32A0A /* Build configuration list for PBXNativeTarget "TurtleGraphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144BE9B51CFC8C5000E32A0A /* Debug */,
+				144BE9B61CFC8C5000E32A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		144BE9B71CFC8C5000E32A0A /* Build configuration list for PBXNativeTarget "TurtleGraphicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144BE9B81CFC8C5000E32A0A /* Debug */,
+				144BE9B91CFC8C5000E32A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		144BE9BA1CFC8C5000E32A0A /* Build configuration list for PBXNativeTarget "TurtleGraphicsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144BE9BB1CFC8C5000E32A0A /* Debug */,
+				144BE9BC1CFC8C5000E32A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 144BE9841CFC8C5000E32A0A /* Project object */;
+}
