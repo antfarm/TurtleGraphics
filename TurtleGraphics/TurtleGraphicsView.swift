@@ -68,9 +68,6 @@ class TurtleGraphicsView: UIView {
         }()
 
         pathLayer.addAnimation(pathAnimation, forKey: "turtlePath")
-
-        pathLayer.setNeedsDisplay()
-        setNeedsDisplay()
     }
 
 
