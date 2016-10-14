@@ -9,7 +9,7 @@
 import UIKit
 
 
-class TurtleGraphicsView: UIView {
+class TurtleGraphicsView: UIView, CAAnimationDelegate {
 
     var bgColor: CGColor!
     var penColor: CGColor!

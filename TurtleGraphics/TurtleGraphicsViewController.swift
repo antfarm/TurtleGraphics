@@ -19,6 +19,8 @@ class TurtleGraphicsViewController: UIViewController {
 
         super.viewDidLoad()
 
+        view.layoutIfNeeded()
+
         turtleGraphics?.draw()
     }
 
