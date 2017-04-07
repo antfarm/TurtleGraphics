@@ -35,7 +35,7 @@ class TurtleGraphics {
     }
 
 
-    private func polygon(n n: Int, x: Float) {
+    private func polygon(n: Int, x: Float) {
 
         repeat_n(n) {
             self.turtle.right(360.0 / Float(n))
@@ -44,7 +44,7 @@ class TurtleGraphics {
     }
 
     
-    private func star(m m: Int, n: Int, x: Float) {
+    private func star(m: Int, n: Int, x: Float) {
 
         repeat_n(m) {
             self.polygon(n: n, x: x)
@@ -53,7 +53,7 @@ class TurtleGraphics {
     }
 
 
-    private func repeat_n(n: Int, closure: () -> ()) {
+    private func repeat_n(_ n: Int, closure: () -> ()) {
 
         for _ in (1...n) {
             closure()

@@ -25,7 +25,7 @@ class TurtleGraphicsViewController: UIViewController {
     }
 
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
 
         return true
     }
@@ -34,13 +34,13 @@ class TurtleGraphicsViewController: UIViewController {
 
 extension TurtleGraphicsViewController: TurtleDelegate {
 
-    func turtleChanged(turtle: Turtle) {
+    func turtleChanged(_ turtle: Turtle) {
 
         turtleGraphicsView.updatePathForTurtle(turtle)
     }
 
 
-    func turtleNeedsUpdate(turtle: Turtle) {
+    func turtleNeedsUpdate(_ turtle: Turtle) {
 
         turtleGraphicsView.updateForTurtle(turtle)
     }

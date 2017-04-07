@@ -11,9 +11,9 @@ import CoreGraphics
 
 protocol TurtleDelegate {
 
-    func turtleChanged(turtle: Turtle)
+    func turtleChanged(_ turtle: Turtle)
 
-    func turtleNeedsUpdate(turtle: Turtle)
+    func turtleNeedsUpdate(_ turtle: Turtle)
 }
 
 
@@ -29,7 +29,7 @@ class Turtle {
 
     init() {
 
-        position = CGPointZero
+        position = CGPoint.zero
         heading = 0
         pen = false
     }
@@ -49,22 +49,22 @@ class Turtle {
     }
 
 
-    func forward(units: Float) {
+    func forward(_ units: Float) {
         moveByDistance(units)
     }
 
 
-    func back(units: Float) {
+    func back(_ units: Float) {
         moveByDistance(-units)
     }
 
 
-    func left(degrees: Float) {
+    func left(_ degrees: Float) {
         rotateByAngle(degrees)
     }
 
 
-    func right(degrees: Float) {
+    func right(_ degrees: Float) {
         rotateByAngle(degrees)
     }
 
@@ -84,37 +84,37 @@ class Turtle {
     }
 
 
-    private func moveToPosition(position: CGPoint) {
+    fileprivate func moveToPosition(_ position: CGPoint) {
 
         self.position = position
         delegate?.turtleChanged(self)
     }
 
 
-    private func rotateToHeading(heading: Float) {
+    fileprivate func rotateToHeading(_ heading: Float) {
 
         self.heading = heading
         delegate?.turtleChanged(self)
     }
 
 
-    private func moveByDistance(units: Float) {
+    fileprivate func moveByDistance(_ units: Float) {
 
-        let π = Float(M_PI)
+        let π = Float.pi
         position.x += CGFloat(units * cos(heading / 180.0 * π))
         position.y += CGFloat(units * sin(heading / 180.0 * π))
         delegate?.turtleChanged(self)
     }
 
 
-    private func rotateByAngle(degrees: Float) {
+    fileprivate func rotateByAngle(_ degrees: Float) {
 
         heading = heading + degrees
         delegate?.turtleChanged(self)
     }
     
     
-    private func setPen(pen: Bool) {
+    fileprivate func setPen(_ pen: Bool) {
         
         self.pen = pen
         delegate?.turtleChanged(self)

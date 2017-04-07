@@ -22,17 +22,17 @@ class TurtleGraphicsView: UIView, CAAnimationDelegate {
 
         super.init(coder: aDecoder)
 
-        path = CGPathCreateMutable()
+        path = CGMutablePath()
 
-        bgColor = UIColor.whiteColor().CGColor
-        penColor = UIColor(hue: 0.56, saturation: 0.8, brightness: 1.0, alpha: 0.9).CGColor
+        bgColor = UIColor.white.cgColor
+        penColor = UIColor(hue: 0.56, saturation: 0.8, brightness: 1.0, alpha: 0.9).cgColor
 
-        backgroundColor = UIColor(CGColor: bgColor)
+        backgroundColor = UIColor(cgColor: bgColor)
 
         pathLayer = {
             let l = CAShapeLayer()
             l.frame = layer.bounds
-            l.fillColor = UIColor.clearColor().CGColor
+            l.fillColor = UIColor.clear.cgColor
             l.strokeColor = penColor
             l.lineWidth = 1.8
             return l
@@ -42,18 +42,18 @@ class TurtleGraphicsView: UIView, CAAnimationDelegate {
     }
 
 
-    func updatePathForTurtle(turtle: Turtle) {
+    func updatePathForTurtle(_ turtle: Turtle) {
 
         if turtle.pen {
-            CGPathAddLineToPoint(path, nil, turtle.position.x, turtle.position.y)
+            path.addLine(to: turtle.position)
         }
         else {
-            CGPathMoveToPoint(path, nil, turtle.position.x, turtle.position.y)
+            path.move(to: turtle.position)
         }
     }
 
 
-    func updateForTurtle(turtle: Turtle) {
+    func updateForTurtle(_ turtle: Turtle) {
 
         pathLayer.path = path
 
@@ -67,7 +67,7 @@ class TurtleGraphicsView: UIView, CAAnimationDelegate {
             return a
         }()
 
-        pathLayer.addAnimation(pathAnimation, forKey: "turtlePath")
+        pathLayer.add(pathAnimation, forKey: "turtlePath")
     }
 
 
