@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let turtleGraphicsVC = window?.rootViewController as! TurtleGraphicsViewController
 
-        let turtle = Turtle()
+        let center = CGPoint(x: window?.bounds.midX ?? 0, y: window?.bounds.midY ?? 0)
+
+        let turtle = Turtle(home: center)
         turtle.delegate = turtleGraphicsVC
 
         turtleGraphicsVC.turtleGraphics = TurtleGraphics(turtle: turtle)

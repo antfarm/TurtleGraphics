@@ -19,19 +19,19 @@ protocol TurtleDelegate {
 
 class Turtle {
 
-    private(set) var position: CGPoint
-    private(set) var pen: Bool
+    private(set) var position = CGPoint.zero
+    private(set) var pen = false
 
-    private var heading: Float
+    private var heading = Float(0)
+
+    private var homePosition: CGPoint
 
     var delegate: TurtleDelegate?
 
 
-    init() {
+    init(home homePosition: CGPoint) {
 
-        position = CGPoint.zero
-        heading = 0
-        pen = false
+        self.homePosition = homePosition
     }
 
 
@@ -45,7 +45,7 @@ class Turtle {
 
 
     func home() {
-        moveToPosition(CGPoint(x: 512, y: 364))
+        moveToPosition(homePosition)
     }
 
 

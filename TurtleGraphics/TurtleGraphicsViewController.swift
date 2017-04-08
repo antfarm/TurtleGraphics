@@ -20,6 +20,12 @@ class TurtleGraphicsViewController: UIViewController {
         super.viewDidLoad()
 
         view.layoutIfNeeded()
+    }
+
+
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
 
         turtleGraphics?.draw()
     }
