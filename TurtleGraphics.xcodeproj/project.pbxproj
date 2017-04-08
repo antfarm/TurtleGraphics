@@ -80,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14043D5C1E97AC8C004A736C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				144BE9BF1CFC8FF600E32A0A /* Turtle.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		14043D5E1E97ACB3004A736C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				144BE9BD1CFC8FB000E32A0A /* TurtleGraphicsView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		144BE9831CFC8C5000E32A0A = {
 			isa = PBXGroup;
 			children = (
@@ -105,9 +121,9 @@
 			children = (
 				144BE98F1CFC8C5000E32A0A /* AppDelegate.swift */,
 				144BE9911CFC8C5000E32A0A /* TurtleGraphicsViewController.swift */,
-				144BE9BD1CFC8FB000E32A0A /* TurtleGraphicsView.swift */,
-				144BE9BF1CFC8FF600E32A0A /* Turtle.swift */,
 				1450A3071CFDDB9600A115FD /* TurtleGraphics.swift */,
+				14043D5C1E97AC8C004A736C /* Model */,
+				14043D5E1E97ACB3004A736C /* View */,
 				144BE9C41CFC98BB00E32A0A /* User Interface */,
 				144BE99B1CFC8C5000E32A0A /* Info.plist */,
 			);
